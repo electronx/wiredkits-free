@@ -1,0 +1,21 @@
+{
+  "name": "wiredkits-free",
+  "owner": { "name": "WiredKits", "email": "hello@wiredkits.com" },
+  "metadata": { "description": "Free Claude Code skills from WiredKits", "version": "1.0.0" },
+  "plugins": [
+    {
+      "name": "starter-kit",
+      "description": "Free skills: write-claude-md, commit-message, release-notes, explain-code.",
+      "version": "1.0.0",
+      "source": "./",
+      "strict": false,
+      "homepage": "https://wiredkits.com/?ref=github",
+      "skills": [
+        "./skills/write-claude-md",
+        "./skills/commit-message",
+        "./skills/release-notes",
+        "./skills/explain-code"
+      ]
+    }
+  ]
+}
