@@ -29,7 +29,7 @@ Pick one:
 - **skills CLI:** `npx skills add electronx/wiredkits-free`
 - **Copy:** `mkdir -p ~/.claude/skills && cp -R skills/* ~/.claude/skills/` (or into `.claude/skills/` in one repo to share it with your team).
 
-Restart Claude Code and run `/skills` to check that the five skills are listed, and `/agents` for the four agents.
+Restart Claude Code and run `/skills` to check that the five skills are listed. To check the agents, ask Claude "which subagents can you use?" and look for searcher, implementer, reviewer and architect.
 
 ## Want more?
 
