@@ -1,6 +1,6 @@
 # Starter Kit for Claude Code (free)
 
-Five free Claude Code skills and four agents. The skills handle the small jobs you do every day: they read your repo before they write anything, follow its conventions, and only state what they checked. The agents and `pick-model-effort` send each piece of work to the right model, so file searches don't run at Opus prices.
+Six free Claude Code skills and four agents. The skills handle the small jobs you do every day: they read your repo before they write anything, follow its conventions, and only state what they checked. The agents and `pick-model-effort` send each piece of work to the right model, so file searches don't run at Opus prices.
 
 | Skill | What it does | Try saying |
 |---|---|---|
@@ -8,6 +8,7 @@ Five free Claude Code skills and four agents. The skills handle the small jobs y
 | `commit-message` | Writes the commit message for your staged changes in your repo's own style (Conventional Commits, ticket prefixes, whatever the log uses), with the why when it can find one. | "commit this", "write a commit message" |
 | `release-notes` | Turns the commits and merged PRs since the last tag into release notes or a CHANGELOG entry, flags breaking changes with what users must do, and suggests the next version. | "release notes since v1.2", "update the changelog" |
 | `explain-code` | Explains a function, file or flow with every step pointing at a file and line, traced from the code rather than guessed from names. | "how does checkout work?", "explain this function" |
+| `safe-migration` | Writes or reviews a database migration so it deploys without locking busy tables, breaking running code or losing data. Works with any SQL database and migration tool (Prisma, Drizzle, Rails, Django, Alembic, Knex, Flyway and more). | "add a NOT NULL column to orders", "is this migration safe?" |
 | `pick-model-effort` | Picks the model and effort for each task and subagent: Haiku for lookups, Sonnet for routine edits, Opus for review and design. Catches the common trap where built-in Explore agents silently run on your most expensive model. | "which model should I use?", or just ask for something that spawns subagents |
 
 ## Agents
@@ -29,7 +30,7 @@ Pick one:
 - **skills CLI:** `npx skills add electronx/wiredkits-free`
 - **Copy:** `mkdir -p ~/.claude/skills && cp -R skills/* ~/.claude/skills/` (or into `.claude/skills/` in one repo to share it with your team).
 
-Restart Claude Code and run `/skills` to check that the five skills are listed. To check the agents, ask Claude "which subagents can you use?" and look for searcher, implementer, reviewer and architect.
+Restart Claude Code and run `/skills` to check that the six skills are listed. To check the agents, ask Claude "which subagents can you use?" and look for searcher, implementer, reviewer and architect.
 
 ## Want more?
 
