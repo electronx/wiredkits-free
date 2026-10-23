@@ -6,13 +6,13 @@
   },
   "metadata": {
     "description": "Free Claude Code skills from WiredKits",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
       "name": "starter-kit",
-      "description": "Free skills and agents: write-claude-md, commit-message, release-notes, explain-code, pick-model-effort, plus searcher/implementer/reviewer/architect agents.",
-      "version": "1.1.0",
+      "description": "Free skills and agents: write-claude-md, commit-message, release-notes, explain-code, pick-model-effort, safe-migration, plus searcher/implementer/reviewer/architect agents.",
+      "version": "1.2.0",
       "source": "./",
       "strict": false,
       "homepage": "https://wiredkits.com/?ref=github",
@@ -21,7 +21,8 @@
         "./skills/commit-message",
         "./skills/release-notes",
         "./skills/explain-code",
-        "./skills/pick-model-effort"
+        "./skills/pick-model-effort",
+        "./skills/safe-migration"
       ],
       "agents": [
         "./agents/searcher.md",
