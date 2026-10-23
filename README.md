@@ -35,6 +35,8 @@ Restart Claude Code and run `/skills` to check that the five skills are listed. 
 
 Get new free skills and Claude Code tips by email: [wiredkits.com/#notify](https://wiredkits.com/#notify).
 
-WiredKits also makes paid skill packs for the bigger jobs: PR review, debugging, security audits and legacy code. All four for $9.99 at [wiredkits.com](https://wiredkits.com/?ref=github).
+WiredKits also makes seven paid skill packs for the bigger jobs: PR review, debugging, security audits, legacy code, UI polish, browser QA and session memory. $4.99 each or all seven for $9.99 at [wiredkits.com](https://wiredkits.com/?ref=github).
+
+Like the kit? Recommend WiredKits and earn 40% of every sale: [affiliates.creem.io/join/wiredkits](https://affiliates.creem.io/join/wiredkits).
 
 Free to use, share and modify under the MIT license (see LICENSE.txt). Questions: hello@wiredkits.com
