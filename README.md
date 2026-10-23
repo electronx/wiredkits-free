@@ -1,5 +1,7 @@
 # Starter Kit for Claude Code (free)
 
+[![Starter Kit for Claude Code (free) on AI Agents Listing](https://aiagentslisting.com/starter-kit-for-claude-code-free/badge.svg?claim=29ac55ca64021f5a42e74579b5e451f2)](https://aiagentslisting.com/mcp/starter-kit-for-claude-code-free)
+
 Six free Claude Code skills and four agents. The skills handle the small jobs you do every day: they read your repo before they write anything, follow its conventions, and only state what they checked. The agents and `pick-model-effort` send each piece of work to the right model, so file searches don't run at Opus prices.
 
 | Skill | What it does | Try saying |
