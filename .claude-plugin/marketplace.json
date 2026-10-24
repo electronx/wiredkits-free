@@ -14,22 +14,7 @@
       "description": "Free skills and agents: write-claude-md, commit-message, release-notes, explain-code, pick-model-effort, safe-migration, plus searcher/implementer/reviewer/architect agents.",
       "version": "1.2.0",
       "source": "./",
-      "strict": false,
-      "homepage": "https://wiredkits.com/?ref=github",
-      "skills": [
-        "./skills/write-claude-md",
-        "./skills/commit-message",
-        "./skills/release-notes",
-        "./skills/explain-code",
-        "./skills/pick-model-effort",
-        "./skills/safe-migration"
-      ],
-      "agents": [
-        "./agents/searcher.md",
-        "./agents/implementer.md",
-        "./agents/reviewer.md",
-        "./agents/architect.md"
-      ]
+      "homepage": "https://wiredkits.com/?utm_source=claude-plugin&utm_medium=marketplace&utm_campaign=free-kit"
     }
   ]
 }
