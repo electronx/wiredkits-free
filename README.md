@@ -2,7 +2,35 @@
 
 [![Starter Kit for Claude Code (free) on AI Agents Listing](https://aiagentslisting.com/starter-kit-for-claude-code-free/badge.svg?claim=29ac55ca64021f5a42e74579b5e451f2)](https://aiagentslisting.com/mcp/starter-kit-for-claude-code-free)
 
+**Version 1.2.0** · MIT · 6 skills + 4 agents · plain Markdown, nothing executes on install. Read every file before you install it.
+
+```bash
+npx skills add electronx/wiredkits-free
+```
+
+Or as a Claude Code plugin: `/plugin marketplace add electronx/wiredkits-free`, then `/plugin install starter-kit@wiredkits-free`.
+
 Six free Claude Code skills and four agents. The skills handle the small jobs you do every day: they read your repo before they write anything, follow its conventions, and only state what they checked. The agents and `pick-model-effort` send each piece of work to the right model, so file searches don't run at Opus prices.
+
+## Before and after
+
+An illustrative example of `commit-message` on a staged fix, in a repo whose log uses Conventional Commits.
+
+Plain prompt, "write a commit message":
+
+```text
+Update refund.ts and add tests
+```
+
+With the skill (it reads `git log` for the style and the diff for the why):
+
+```text
+fix(refunds): stop double refund when the payment API times out
+
+The retry wrapped the whole refund call, so a timeout after the
+provider had already refunded sent a second refund. Retry only the
+status check and make the refund call idempotent by order id.
+```
 
 | Skill | What it does | Try saying |
 |---|---|---|
@@ -24,7 +52,15 @@ Six free Claude Code skills and four agents. The skills handle the small jobs yo
 
 The plugin install sets these up for you. If you copy files by hand, put `agents/*.md` in `~/.claude/agents/`.
 
-## Install (1 minute)
+## What it runs, sends and fetches
+
+Everything here is Markdown instructions for Claude. There are no scripts, hooks, MCP servers or binaries, and the kit itself sends no data anywhere and has no telemetry.
+
+- **Runs:** only commands Claude Code already asks you to approve. `commit-message` runs `git diff`, `git status`, `git log` and, when you ask it to commit, `git commit`. `release-notes` runs `git log`, `git describe` and `git show`, and if the GitHub CLI is installed, `gh pr list` (read-only) and, only when you ask, `gh release create`. `safe-migration` may run your migration tool's dry-run or SQL preview command. The `reviewer` agent may run read-only commands such as `git diff` or your test suite. The other skills and agents only read files, except `implementer`, which edits files and runs your tests for the change you give it.
+- **Sends:** nothing of its own. `commit-message` and `release-notes` push nothing; `gh release create` publishes a release only when you ask for it.
+- **Fetches:** the `architect` agent may use web search and web fetch to check documentation. No other skill or agent fetches anything.
+
+## Install options
 
 Pick one:
 
@@ -36,10 +72,8 @@ Restart Claude Code and run `/skills` to check that the six skills are listed. T
 
 ## Want more?
 
-Get new free skills and Claude Code tips by email: [wiredkits.com/#notify](https://wiredkits.com/#notify).
+Get new free skills and Claude Code tips by email: [wiredkits.com/#notify](https://wiredkits.com/?utm_source=github&utm_medium=readme&utm_campaign=free-kit#notify).
 
-WiredKits also makes seven paid skill packs for the bigger jobs: PR review, debugging, security audits, legacy code, UI polish, browser QA and session memory. $4.99 each or all seven for $9.99 at [wiredkits.com](https://wiredkits.com/?ref=github).
+WiredKits also makes seven paid skill packs for the bigger jobs: PR review, debugging, security audits, legacy code, UI polish, browser QA and session memory. See them at [wiredkits.com](https://wiredkits.com/?utm_source=github&utm_medium=readme&utm_campaign=free-kit).
 
-Like the kit? Recommend WiredKits and earn 40% of every sale: [affiliates.creem.io/join/wiredkits](https://affiliates.creem.io/join/wiredkits).
-
-Free to use, share and modify under the MIT license (see LICENSE.txt). Questions: hello@wiredkits.com
+Free to use, share and modify under the MIT license (see LICENSE). Questions: hello@wiredkits.com

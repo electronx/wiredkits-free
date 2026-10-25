@@ -1,0 +1,14 @@
+{
+  "name": "wiredkits-starter-kit",
+  "version": "1.2.0",
+  "description": "Free Claude Code skills and agents: write-claude-md, commit-message, release-notes, explain-code, pick-model-effort and safe-migration, plus searcher, implementer, reviewer and architect agents that route work to the right model.",
+  "author": {
+    "name": "WiredKits",
+    "email": "hello@wiredkits.com",
+    "url": "https://wiredkits.com"
+  },
+  "homepage": "https://wiredkits.com/?utm_source=claude-plugin-directory&utm_medium=directory&utm_campaign=free-kit",
+  "repository": "https://github.com/electronx/wiredkits-free",
+  "license": "MIT",
+  "keywords": ["skills", "agents", "claude-md", "commit-message", "release-notes", "database-migrations", "model-selection"]
+}
